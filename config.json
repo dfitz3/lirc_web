@@ -1,0 +1,54 @@
+{
+  "repeaters": {
+    "onkyo": {
+      "KEY_VOLUMEUP": true,
+      "KEY_VOLUMEDOWN": true
+    }
+  },
+  "macros": {
+    "Computer": [
+      [ "projector_screen",  "KEY_DOWN" ],
+      [ "projector",  "KEY_PROJECTOR_ON" ],
+      [ "onkyo", "KEY_POWER" ],
+      [ "delay", "1000" ],
+      [ "onkyo", "KEY_SAT"]
+    ],
+    "Chromecast - Video": [
+      [ "projector_screen",  "KEY_DOWN" ],
+      [ "projector",  "KEY_PROJECTOR_ON" ],
+      [ "onkyo", "KEY_POWER" ],
+      [ "delay", "1000" ],
+      [ "onkyo", "KEY_C"]
+    ],
+    "Chromecast - Music": [
+      [ "onkyo", "KEY_POWER" ],
+      [ "delay", "1000" ],
+      [ "onkyo", "KEY_C"]
+    ],
+    "All Off - Screen Up": [
+      [ "projector_screen",  "KEY_UP" ],
+      [ "projector",  "KEY_PROJECTOR_OFF" ],
+      [ "delay", "1000" ],
+      [ "projector",  "KEY_PROJECTOR_OFF" ],
+      [ "delay", "1000" ],
+      [ "onkyo", "KEY_POWER" ]
+    ]
+    "All Off - Screen Down": [
+      [ "projector",  "KEY_PROJECTOR_OFF" ],
+      [ "delay", "1000" ],
+      [ "projector",  "KEY_PROJECTOR_OFF" ],
+      [ "delay", "1000" ],
+      [ "onkyo", "KEY_POWER" ]
+    ]
+  },
+  "commandLabels": {
+    "onkyo": {
+      "KEY_VOLUMEUP": "Volume Up",
+      "KEY_VOLUMEDOWN": "Volume Down"
+    }
+  },
+  "remoteLabels": {
+     "projector_screen": "screen",
+     "side_candles": "side candles"
+  }
+}
